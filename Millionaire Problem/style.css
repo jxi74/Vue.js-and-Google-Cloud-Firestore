@@ -1,0 +1,42 @@
+.buttons {
+    user-select: none;
+    color: white;
+    padding: 10px;
+}
+
+.body {
+    background-color: #040444;
+}
+
+
+#usrInput {
+    font-size: 30px;
+    line-height: 75px;
+    width: 1000px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#game {
+    margin-left: 300px;
+}
+
+
+.title {
+    user-select: none;
+    color: white;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}

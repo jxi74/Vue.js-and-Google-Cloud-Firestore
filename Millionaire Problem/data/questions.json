@@ -1,0 +1,167 @@
+[
+  {
+    "num": "1",
+    "time": "15000",
+    "question": "In what year did the first iPhone release?",
+    "a": "2005",
+    "b": "2006",
+    "c": "2007",
+    "d": "2008",
+    "correct": "c",
+    "amt": "$100"
+  },
+  {
+    "num": "2",
+    "time": "15000",
+    "question": "What is the largest planet in our solar system?",
+    "a": "Venus",
+    "b": "Jupiter",
+    "c": "Mars",
+    "d": "Saturn",
+    "correct": "b",
+    "amt": "$200"
+  },
+  {
+    "num": "3",
+    "time": "15000",
+    "question": "What is the capital of Italy?",
+    "a": "Paris",
+    "b": "Berlin",
+    "c": "Madrid",
+    "d": "Rome",
+    "correct": "d",
+    "amt": "$300"
+  },
+  {
+    "num": "4",
+    "time": "15000",
+    "question": "Which of these countries is not a part of Scandinavia?",
+    "a": "Norway",
+    "b": "Finland",
+    "c": "Denmark",
+    "d": "Netherlands",
+    "correct": "d",
+    "amt": "$500"
+  },
+  {
+    "num": "5",
+    "time": "15000",
+    "question": "In which year did World War II end?",
+    "a": "1942",
+    "b": "1944",
+    "c": "1945",
+    "d": "1947",
+    "correct": "c",
+    "amt": "$1,000"
+  },
+  {
+    "num": "6",
+    "time": "30000",
+    "question": "What is the chemical symbol for gold?",
+    "a": "Ag",
+    "b": "Au",
+    "c": "Cu",
+    "d": "Fe",
+    "correct": "b",
+    "amt": "$2,000"
+  },
+  {
+    "num": "7",
+    "time": "30000",
+    "question": "What is the smallest planet in our solar system?",
+    "a": "Venus",
+    "b": "Earth",
+    "c": "Mercury",
+    "d": "Mars",
+    "correct": "c",
+    "amt": "$4,000"
+  },
+  {
+    "num": "8",
+    "time": "30000",
+    "question": "What is the capital of Canada?",
+    "a": "Vancouver",
+    "b": "Toronto",
+    "c": "Montreal",
+    "d": "Ottawa",
+    "correct": "d",
+    "amt": "$8,000"
+  },
+  {
+    "num": "9",
+    "time": "30000",
+    "question": "Who painted the famous work \"The Persistence of Memory\"?",
+    "a": "Pablo Picasso",
+    "b": "Vincent van Gogh",
+    "c": "Salvador Dalí",
+    "d": "Leonardo da Vinci",
+    "correct": "c",
+    "amt": "$16,000"
+  },
+  {
+    "num": "10",
+    "time": "30000",
+    "question": "Which of these animals is not a mammal?",
+    "a": "Elephant",
+    "b": "Lion",
+    "c": "Snake",
+    "d": "Dolphin",
+    "correct": "c",
+    "amt": "$32,000"
+  },
+  {
+    "num": "11",
+    "time": "45000",
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "a": "Marie Curie",
+    "b": "Rosalind Franklin",
+    "c": "Florence Nightingale",
+    "d": "Ada Lovelace",
+    "correct": "a",
+    "amt": "$64,000"
+  },
+  {
+    "num": "12",
+    "time": "45000",
+    "question": "What is the currency of Japan?",
+    "a": "Yen",
+    "b": "Euro",
+    "c": "Dollar",
+    "d": "Pound",
+    "correct": "a",
+    "amt": "$125,000"
+  },
+  {
+    "num": "13",
+    "time": "45000",
+    "question": "Which planet is known as the \"Red Planet\"?",
+    "a": "Jupiter",
+    "b": "Venus",
+    "c": "Mars",
+    "d": "Saturn",
+    "correct": "c",
+    "amt": "$250,000"
+  },
+  {
+    "num": "14",
+    "time": "45000",
+    "question": "What is the smallest country in the world by land area?",
+    "a": "Monaco",
+    "b": "San Marino",
+    "c": "Vatican City",
+    "d": "Liechtenstein",
+    "correct": "c",
+    "amt": "$500,000"
+  },
+  {
+    "num": "15",
+    "time": "45000",
+    "question": "Which of these composers did not live during the Baroque period?",
+    "a": "Johann Sebastian Bach",
+    "b": "Antonio Vivaldi",
+    "c": "Wolfgang Amadeus Mozart",
+    "d": "George Frideric Handel",
+    "correct": "c",
+    "amt": "$1,000,000"
+  }
+]

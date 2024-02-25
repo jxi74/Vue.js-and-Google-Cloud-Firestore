@@ -1,0 +1,59 @@
+A strategy for you to build this game is as follows:
+
+1. Store a list of questions and answers in a static data set in your code.
+    a. If you are able to find an API with data, feel free to use it
+
+    DONE
+   - Use a json file to reference the specific questions and answers to each question. Then I can
+   loop through each question in the json file, display in a div, and check if the answer is correct for each question
+   and go from there.
+
+    DONE
+   - Notes: Keep track of how many answered correctly (Money accumulated)
+            Keep track of how much extra time is left for final question if reached
+
+DONE
+2. When the player starts the game, collect the player’s name.
+    - keyboard_events from week7
+
+DONE
+3. Start presenting questions one after another to the player.
+    - Loop through json file
+
+DONE
+4. Allot a timer to each question.  (The timing strategy is up to you how you want this to be
+implemented).
+
+DONE
+5. Allot minimum prize earning levels (for instance the user is guaranteed money after answering
+5, 10 and 15 questions correctly in the North American version).
+    - Just keep track of a counter and make a condition that checks when the player loses if they
+    answered enough questions over a threshold.
+
+DONE
+6. The game ends when either:
+    a. The time expires on a given question.
+    b. The player guesses the question incorrectly.
+    c. The player guesses all questions correctly.
+
+    - Implement all of these conditions
+
+
+7. Once the game is over, record the player’s name and their prize earnings in a Google Cloud
+Firestore database (that you can create for free).
+
+8. Show the user a list of players and their “high scores” once the game is over.
+    - Do this after step 7.
+
+Order of game flow:
+    Game starts, press the start button on the home page when it opens.
+
+    Display the current Question (Maybe display current question on sidebar?)
+
+    Go through flow of game until any of the conditions in step 6. are met
+
+    Register name and score after step 6. is fulfilled
+
+    Display high scores
+
+    Ask player if they want to play again
