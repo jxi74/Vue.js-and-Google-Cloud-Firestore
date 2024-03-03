@@ -40,7 +40,7 @@ export async function updateScores(Name, Score) {
     snapshot.forEach((doc) => {
         if (doc.data().Name === Name) {
             if (doc.data().Score < Score) {
-                addScoresWId(Name, Score, doc.id)
+                updateNewHighScore(Name, Score, doc.id)
             }
             nameFound = true;
         }
@@ -58,14 +58,9 @@ export async function addScores(Name, Score) {
         Score: Score
     });
 }
-export async function addScoresWId(Name, Score, id) {
-    // Get a reference to the document to delete
-    //const docRefToDelete = doc(db, "HighScores", id);
+export async function updateNewHighScore(Name, Score, id) {
 
-    // Delete the document
-    //await deleteDoc(docRefToDelete);
-
-    // Add the updated score
+    // Update the score
     const docRefToAdd = doc(db, "HighScores", id);
     await updateDoc(docRefToAdd, {
         Score: Score
