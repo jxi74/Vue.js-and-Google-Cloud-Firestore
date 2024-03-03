@@ -60,15 +60,14 @@ export async function addScores(Name, Score) {
 }
 export async function addScoresWId(Name, Score, id) {
     // Get a reference to the document to delete
-    const docRefToDelete = doc(db, "HighScores", id);
+    //const docRefToDelete = doc(db, "HighScores", id);
 
     // Delete the document
-    await deleteDoc(docRefToDelete);
+    //await deleteDoc(docRefToDelete);
 
     // Add the updated score
-    const docRefToAdd = doc(db, "HighScores");
-    await setDoc(docRefToAdd, {
-        Name: Name,
+    const docRefToAdd = doc(db, "HighScores", id);
+    await updateDoc(docRefToAdd, {
         Score: Score
     });
 }
