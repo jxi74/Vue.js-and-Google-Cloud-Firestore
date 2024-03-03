@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { getFirestore, doc, getDoc, getDocs, collection, addDoc, updateDoc, deleteDoc, setDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { getFirestore, doc, getDoc, getDocs, collection, addDoc, updateDoc, deleteDoc, setDoc, orderBy, query } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,7 +23,7 @@ export async function getScores() {
     const values = [];
 
     let docRef = collection(db, "HighScores");
-    const snapshot = await getDocs(docRef);
+    const snapshot = await getDocs(query(docRef, orderBy("Score", "desc"))); // Orders by highscore
     snapshot.forEach((doc) => {
         values.push(doc.data());
         console.log(doc.data());
@@ -34,6 +34,7 @@ export async function getScores() {
 
 export async function updateScores(Name, Score) {
     // To update the current scores
+    let nameFound = false;
     let docRef = collection(db, "HighScores");
     const snapshot = await getDocs(docRef);
     snapshot.forEach((doc) => {
@@ -41,10 +42,13 @@ export async function updateScores(Name, Score) {
             if (doc.data().Score < Score) {
                 addScoresWId(Name, Score, doc.id)
             }
+            nameFound = true;
         }
     })
 
-    await addScores(Name, Score);
+    if (!nameFound) {
+        await addScores(Name, Score);
+    }
 }
 
 export async function addScores(Name, Score) {
